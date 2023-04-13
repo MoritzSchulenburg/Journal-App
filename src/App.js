@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <h1>Journal</h1>
       </header>
-    </div>
+      <main>
+        <form action="submit">
+          <h2>NEW ENTRY</h2>
+          <label htmlFor="motto">Motto</label>
+          <input type="text" name="motto" id="motto" />
+          <label htmlFor="notes">Notes</label>
+          <input type="text" name="motto" id="motto" />
+          <button>Create</button>
+        </form>
+        <div className="counters">
+          <h3>All Entries</h3>
+          <span>3</span>
+          <h3>Favorites</h3>
+          <span>1</span>
+        </div>
+        <section>
+          <span>Feb 27, 2028</span>
+          <h4>Thats Life in the City </h4>
+          <img src="" alt="" />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem,
+            ut possimus aut totam error minima velit unde quos pariatur deserunt
+            a, nam, ipsam animi expedita quia vero porro autem. Quas!
+          </p>
+        </section>
+      </main>
+      <footer>
+        <span>Journal App - 2028</span>
+      </footer>
+    </>
   );
 }
 
