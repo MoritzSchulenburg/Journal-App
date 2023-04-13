@@ -1,3 +1,5 @@
+import "./Box.css";
+
 export function Box() {
   return (
     <div className="box">
