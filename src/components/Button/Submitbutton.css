@@ -1,0 +1,4 @@
+button.button__submit {
+  color: white;
+  background-color: var(--color-nemo);
+}
